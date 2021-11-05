@@ -9,10 +9,10 @@
 
 <div style="width:100%; text-align: center; margin-top:50px">
 
-    <button onclick="alert('winner')"> Pick a winner </button>
+    <button onclick="BeginShuffle()"> Pick a winner </button>
 
     <h1>And the winner is...</h1>
-<h2 id="txtWinner"></h2>
+<h2 id="txtWinner">????????????????</h2>
 </div>
 
 
@@ -24,18 +24,20 @@
         var randomAttendee = Attendees[Math.floor(Math.random()*Attendees.length)];
 
 
-        document.getElementById("txtWinner").innerHTML= randomAttendee;
+        // document.getElementById("txtWinner").innerHTML= randomAttendee;
         
-        shuffleLetters(
-            document.querySelector('#txtWinner'),{
-        
-            // number of times the characters will be shuffled
-            iterations: 12,
+        function BeginShuffle(){
+            shuffleLetters(
+                document.querySelector('#txtWinner'),{
+                
+                #text:randomAttendee,
+                // number of times the characters will be shuffled
+                iterations: 12,
 
-            // the amount of frames per second
-            fps: 30,
-            }
-        );
+                // the amount of frames per second
+                fps: 30,
+                }
+            )};
 </script>
 
 </html>
