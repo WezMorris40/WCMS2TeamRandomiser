@@ -7,19 +7,26 @@
     html{background-color:rgb(30,30,30);}
 </style>
 
-<script>
-    function myFunction() {
-     alert("hi");
-    }
-</script>
 </head>
 <div style="width:100%; text-align: center; margin-top:50px">
 
-    <button onclick="myFunction()"> Pick a winner </button>
+   
 
-    <h1>And the winner is...</h1>
+<h1>And the winner is...</h1>
 <h2 id="txtWinner">????????????????</h2>
 </div>
+
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+
 
 
 <script src="ShuffleLetters.js"></script>
@@ -29,7 +36,7 @@
         var Attendees = ["Wez", "Muktar", "Anton", "Oleksii D", "Katyrina"];
         var randomAttendee = Attendees[Math.floor(Math.random()*Attendees.length)];
 
-function testbutton(){ alert("hello")};
+    function testbutton(){ alert("hello")};
         // document.getElementById("txtWinner").innerHTML= randomAttendee;
         
         function BeginShuffle(){
@@ -43,7 +50,7 @@ function testbutton(){ alert("hello")};
                 // the amount of frames per second
                 fps: 30,
                 }
-            )};
+        )};
 </script>
 
 
