@@ -1,11 +1,15 @@
-<script>
-    var Attendees = ["Wez", "Muktar", "Anton"];
-    var randomAttendee = Attendees[Math.floor(Math.random()*Attendees.length)];
-    
-    document.getElementById("#txtWinner").innerHTML= randomAttendee;
 
-</script>
 <div style="width:100%; text-align: center;">
 <h1>And the winner is...</h1>
 <h2 id="txtWinner"></h2>
 </div>
+
+<script>
+    document.onload( function(){
+
+        var Attendees = ["Wez", "Muktar", "Anton"];
+        var randomAttendee = Attendees[Math.floor(Math.random()*Attendees.length)];
+        
+        document.getElementById("txtWinner").innerHTML= randomAttendee;
+    });
+</script>
