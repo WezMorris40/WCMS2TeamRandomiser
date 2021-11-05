@@ -23,7 +23,16 @@
 
         document.getElementById("txtWinner").innerHTML= randomAttendee;
         
-        shuffleLetters(document.querySelector('#txtWinner'));
+        shuffleLetters(
+            document.querySelector('#txtWinner'),{
+        
+            // number of times the characters will be shuffled
+            iterations: 12,
+
+            // the amount of frames per second
+            fps: 30,
+            }
+        );
 </script>
 
 </html>
