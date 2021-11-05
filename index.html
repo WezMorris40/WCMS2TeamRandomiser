@@ -9,7 +9,7 @@
 
 <div style="width:100%; text-align: center; margin-top:50px">
 
-    <button onclick="BeginShuffle()"> Pick a winner </button>
+    <button onclick="testbutton"> Pick a winner </button>
 
     <h1>And the winner is...</h1>
 <h2 id="txtWinner">????????????????</h2>
@@ -23,7 +23,7 @@
         var Attendees = ["Wez", "Muktar", "Anton", "Oleksii D", "Katyrina"];
         var randomAttendee = Attendees[Math.floor(Math.random()*Attendees.length)];
 
-
+function testbutton(){ alert("hello")};
         // document.getElementById("txtWinner").innerHTML= randomAttendee;
         
         function BeginShuffle(){
