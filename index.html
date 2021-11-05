@@ -23,7 +23,17 @@
 
 <script>
 function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
+    shuffleLetters(
+                document.querySelector('#txtWinner'),{
+                
+                #text:randomAttendee,
+                // number of times the characters will be shuffled
+                iterations: 12,
+
+                // the amount of frames per second
+                fps: 30,
+                }
+        )
 }
 </script>
 
@@ -36,21 +46,10 @@ function myFunction() {
         var Attendees = ["Wez", "Muktar", "Anton", "Oleksii D", "Katyrina"];
         var randomAttendee = Attendees[Math.floor(Math.random()*Attendees.length)];
 
-    function testbutton(){ alert("hello")};
         // document.getElementById("txtWinner").innerHTML= randomAttendee;
         
         function BeginShuffle(){
-            shuffleLetters(
-                document.querySelector('#txtWinner'),{
-                
-                #text:randomAttendee,
-                // number of times the characters will be shuffled
-                iterations: 12,
-
-                // the amount of frames per second
-                fps: 30,
-                }
-        )};
+            };
 </script>
 
 
