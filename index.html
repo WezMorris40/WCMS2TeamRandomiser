@@ -4,7 +4,7 @@
     /* html{ color: #fff; background:#CF5300 url(main-background.jpg) no-repeat top center; } */
     h1{ color: #fff; font-size: 5em;}
     h2{ color: #fff; font-size: 5em;}
-    html{background-color:rbg(30,30,30);}
+    html{background-color:rgb(30,30,30);}
 </style>
 
 <div style="width:100%; text-align: center; margin-top:50px">
@@ -12,13 +12,17 @@
 <h2 id="txtWinner"></h2>
 </div>
 
+
+<script src=”https://unpkg.com/shuffle-letters”></script>
+
 <script>
 
-        var Attendees = ["Wez", "Muktar", "Anton"];
+        var Attendees = ["Wez", "Muktar", "Anton", "Oleksii D", "Katyrina"];
         var randomAttendee = Attendees[Math.floor(Math.random()*Attendees.length)];
-        
-        document.getElementById("txtWinner").innerHTML= randomAttendee;
 
+
+        document.getElementById("txtWinner").innerHTML= randomAttendee;
+        shuffleLetters(document.querySelector('#txtWinner'));
 </script>
 
 </html>
