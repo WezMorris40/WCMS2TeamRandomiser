@@ -24,6 +24,10 @@
 
 <script>
 function myFunction() {
+
+    var Attendees = ["Wez", "Muktar", "Anton", "Oleksii D", "Katyrina"];
+    var randomAttendee = Attendees[Math.floor(Math.random()*Attendees.length)];
+
     shuffleLetters(
                 document.querySelector('#txtWinner'),{
                 
@@ -37,20 +41,4 @@ function myFunction() {
         )
 }
 </script>
-
-
-
-
-<script>
-
-        var Attendees = ["Wez", "Muktar", "Anton", "Oleksii D", "Katyrina"];
-        var randomAttendee = Attendees[Math.floor(Math.random()*Attendees.length)];
-
-        // document.getElementById("txtWinner").innerHTML= randomAttendee;
-        
-        function BeginShuffle(){
-            };
-</script>
-
-
 </html>
