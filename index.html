@@ -2,8 +2,10 @@
     var Attendees = ["Wez", "Muktar", "Anton"];
     var randomAttendee = Attendees[Math.floor(Math.random()*Attendees.length)];
     
-    document.getElementById("txtWinner").innerHTML(randomAttendee);
+    document.getElementById("txtWinner").innerHTML= randomAttendee;
     
 </script>
-
-<h1 id="txtWinner"></h1>
+<div style="width:100%; text-align: center;">
+<h1>And the winner is...</h1>
+<h2 id="txtWinner"></h2>
+</div>
