@@ -1,7 +1,9 @@
 <script>
-
-    alert("hello world");
-
+    var Attendees = ["Wez", "Muktar", "Anton"];
+    var randomAttendee = Attendees[Math.floor(Math.random()*Attendees.length)];
+    
+    document.getElementById("txtWinner").innerHTML(randomAttendee);
+    
 </script>
 
-Hello world!
+<h1 id="txtWinner"></h1>
