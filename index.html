@@ -6,7 +6,7 @@
     h2{ color: #fff; font-size: 3em;}
     html{background-color:rgb(30,30,30);}
 
-    .aRandomise:hover{ font-size: 3em; color: #fff;}
+    .aRandomise:hover,  .aRandomise { font-size: 3em; color: #fff; }
 
     /* TODO - Make it consistent, based on the day */
 </style>
@@ -32,9 +32,8 @@
 function myFunction() {
 
     var Attendees = [
-        "Wez", "Muktar", "Anton", "Oleksii D", "Katyrina", "Tetiana", "Sergii D",
-        "Ivan B", "Oleksandr O", "Serhii B", "Pavlo S", "Oleksii S", 
-        "Pavlo B", "Olena A", "Oleksandr M"];
+        "Wez", "Muktar", "Anton", "Anastasiia R", "Oleksandr M", "Oleksandr O", "Olena A", "Oleksii D","Oleksii S",  "Katyrina", "Tetiana",
+        "Ivan B", "Serhii B", "Sergii D", "Pavlo B", "Pavlo S"];
     var randomAttendee = Attendees[Math.floor(Math.random()*Attendees.length)];
 
     shuffleLetters(
