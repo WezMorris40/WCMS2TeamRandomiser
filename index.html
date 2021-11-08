@@ -6,6 +6,8 @@
     h2{ color: #fff; font-size: 5em;}
     html{background-color:rgb(30,30,30);}
 
+    .aRandomise:hover{ color: #fff;}
+
     /* TODO - Make it consistent, based on the day */
 </style>
 
@@ -15,10 +17,11 @@
 </head>
 <div style="width:100%; text-align: center; margin-top:50px">
    
-<h2><a href="javascript:myFunction()">Who's running the standup today?</a></h2>
+<h3>Who's running the standup today?</h3>
 
-<h2>And the winner is...</h2>
-<h2 id="txtWinner">????????????????</h2>
+<a href="javascript:myFunction()" class="aRandomise">Randomise!</a>
+
+<h3 id="txtWinner">????????????????</h3>
 </div>
 
 
@@ -39,7 +42,7 @@ function myFunction() {
                 
                 text:randomAttendee,
                 // number of times the characters will be shuffled
-                iterations: 12,
+                iterations: 24,
 
                 // the amount of frames per second
                 fps: 30,
